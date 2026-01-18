@@ -1,0 +1,148 @@
+.cart-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Cart Item Card */
+.cart-card {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cart-card img {
+  width: 120px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-card h3 {
+  margin: 0;
+}
+
+.cart-card p {
+  margin: 5px 0;
+  color: #444;
+}
+
+/* Quantity */
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.qty button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.qty span {
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Remove button */
+.remove {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Cart Summary */
+.cart-summary {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.cart-summary h3 {
+  margin-bottom: 15px;
+}
+
+.cart-summary button {
+  padding: 12px 20px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Checkout Form */
+.checkout-form {
+  margin-top: 30px;
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.checkout-form h3 {
+  margin-bottom: 15px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-form button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Empty Cart */
+.cart-container button {
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-summary {
+    text-align: center;
+  }
+}
